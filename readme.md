@@ -16,6 +16,7 @@
 }```
 
 * 确保viewController释放的时候stop scrolling
+
 ```- (void)dealloc 
 {
 	[self stopFollowingScrollView];
