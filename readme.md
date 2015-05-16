@@ -8,20 +8,18 @@
 ###设置：
 * Import ```UIViewController+ScrollingNavbar.h``` in your controller
 * 实现以下2个方法
-<pre>
-- (void)viewWillDisappear:(BOOL)animated
+
+```- (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
 	   [self showNavBarAnimated:NO];
-}
-</pre>
+}```
+
 * 确保viewController释放的时候stop scrolling
-<pre>
-- (void)dealloc 
+```- (void)dealloc 
 {
 	[self stopFollowingScrollView];
-}
-</pre>
+}```
 
 
 
